@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Page Title -->
+    <title>thof.iba</title>
+    
+    <!-- External Styles and Script -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Logo Temp White.png" alt="THOF Logo"></a>
+            </div>
+
+            <!-- Hamburger Button -->
+            <div class="hamburger" id="hamburger">&#9776;</div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="branches.html">BRANCHES</a></li>
+                <li><a href="Sermons.html">SERMONS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- HERO -->
+  <section class="hero about-hero">
+    <img src="pic/about page hero.jpg" alt="About Us Hero Image" class="hero-image" />
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>WE ARE THE INTERNATIONAL <br />BELIEVERS ABODE</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="mission-vision">
+    <div class="container">
+      <h2>Mission & Vision</h2>
+      <p>Our mission is to bring believers to the knowledge of their inheritance in Christ.</p>
+    </div>
+  </section>
+
+  <!-- CORE BELIEFS -->
+  <section class="core-beliefs">
+    <div class="container">
+      <h2>Core Beliefs</h2>
+      <div class="beliefs-grid">
+        <div class="belief">
+          <h3>Discipleship</h3>
+          <p>We are committed to raising spiritually mature believers who follow Jesus wholeheartedly, grow in His Word, and live out their faith daily.</p>
+        </div>
+        <div class="belief">
+          <h3>Impact</h3>
+          <p>We believe in empowering believers to influence every sphere of life—family, education, business, and governance—with excellence and purpose.</p>
+        </div>
+        <div class="belief">
+          <h3>Community</h3>
+          <p>We value genuine relationships and unity, creating a family of faith where everyone belongs, grows, and serves together.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="leadership-section">
+    <div class="container leader-profile">
+      <img src="pic/DMK.jpg" alt="Pastor Daniel Musonda Kaira" class="leader-image" />
+      <div class="leader-info">
+        <h2>Senior Pastor Daniel Musonda Kaira</h2>
+        <h4>Founder & Lead Pastor of The Household of Faith Church</h4>
+        <p>
+          Pastor Daniel Musonda Kaira is the visionary founder and Lead Pastor of The Household Of Faith Church (HoF),
+          a fast-growing global ministry with over 2,500 members and more than 6 branches in Zambia,
+          along with a vibrant virtual church for members in the diaspora.
+        </p>
+        <p>
+          He is renowned for his dynamic preaching, teaching, and gospel songwriting. His mission is to help people discover
+          and confidently live out their God-given purpose through the transformative power of the Gospel. He is best known
+          for teaching on Character Development, Personal Development, and Relationships.
+        </p>
+        <p>
+          Pastor Daniel’s ministry began during his time as an undergraduate at the University of Zambia in 2016, where he
+          led a mentorship class and co-founded a movement called Word Impowerment Movement (WEM) alongside Apostle Fredrick
+          Kaluluma of City of The Lord Church.
+        </p>
+        <p>
+          This mentorship class evolved into what is now HoF — a global church focused on teaching, missions,
+          and empowering believers to cause impact in every area of influence.
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="pastor-social-icons">
+          <a href="https://facebook.com/thehouseholdoffaith" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/thehouseholdoffaith" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/@thehouseholdoffaith" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.youtube.com/@householdoffaithchurch" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/260972914226" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="events-section">
+    <h2>UPCOMING EVENTS</h2>
+    <p>Mark your calendar and invite someone special!</p>
+    <div class="event-row">
+      <div class="event-image">
+        <img src="pic/LOve sun.png" alt="Love Sunday 2025" />
+      </div>
+      <div class="event-info">
+        <h3>LOVE SUNDAY 2025</h3>
+        <p><strong>Date:</strong> 24th May, 2025</p>
+        <p><strong>Time:</strong> 08:00 AM</p>
+        <p><strong>Venue:</strong> Mulungushi International Conference Centre</p>
+        <p class="event-desc">An unforgettable time of worship, love, and purpose. Don’t miss it!</p>
+
+        <div id="countdown" class="countdown-timer">
+          <p>Time remaining:</p>
+          <div id="timer">
+            <span id="days"></span> days
+            <span id="hours"></span> hours
+            <span id="minutes"></span> minutes
+            <span id="seconds"></span> seconds
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-section about">
+        <h3>About HOF</h3>
+        <p>We're a family of believers passionate about the gospel of Christ. Join us and grow in faith, purpose, and love.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Sermons.html">Sermons</a></li>
+          <li><a href="branches.html">Branches</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section newsletter">
+        <h3>Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact</h3>
+        <p>Email:<a href="thomasmtongahof@gmail.com"></a></p>
+        <p>Phone: +260-972-914-226</p>
+        <p>Address: Indeco House, Cairo Road</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 The Household Of Faith Church. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

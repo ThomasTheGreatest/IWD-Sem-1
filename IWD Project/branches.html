@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Page Title -->
+    <title>thof.iba</title>
+    
+    <!-- External Styles and Script -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="Logo Temp White.png" alt="THOF Logo"></a>
+            </div>
+
+            <!-- Hamburger Button -->
+            <div class="hamburger" id="hamburger">&#9776;</div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="branches.html">BRANCHES</a></li>
+                <li><a href="Sermons.html">SERMONS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- Branches Section -->
+  <section class="branches-section">
+    <h2>VISIT HOUSEHOLD OF FAITH CHURCH</h2>
+    <div class="city-buttons">
+      <button onclick="scrollToBranch('lusaka')">Lusaka</button>
+      <button onclick="scrollToBranch('kitwe')">Kitwe</button>
+      <button onclick="scrollToBranch('kabwe')">Kabwe</button>
+      <button onclick="scrollToBranch('livingstone')">Livingstone</button>
+    </div>
+    
+   <!-- Lusaka -->
+<div class="branch-section" id="lusaka">
+  <img src="pic/HQ Flyer.jpg" alt="Lusaka Branch" />
+  <div class="branch-info">
+    <h3>LUSAKA</h3>
+    <p>Indeco House, Second Floor, Cairo Road<br>Sundays @ 8 AM</p>
+    <button onclick="openOverlay('lusaka')">Find Out More</button>
+  </div>
+</div>
+
+<div id="lusaka-overlay" class="branch-overlay">
+  <h2>About Lusaka Branch</h2>
+  <p>
+    The Lusaka branch is our headquarters, located at Indeco House, Second Floor, Cairo Road. We meet every Sunday at 8 AM for an uplifting service that includes vibrant worship, practical teachings, and an atmosphere of faith and family.
+  </p>
+  <button onclick="closeOverlay('lusaka')">Close</button>
+</div>
+
+<!-- Kitwe -->
+<div class="branch-section" id="kitwe">
+  <img src="pic/Kitwe.jpg" alt="Kitwe Branch" />
+  <div class="branch-info">
+    <h3>KITWE</h3>
+    <p>School of Natural Resources, CBU<br>Sundays @ 8 AM</p>
+    <button onclick="openOverlay('kitwe')">Find Out More</button>
+  </div>
+</div>
+
+<div id="kitwe-overlay" class="branch-overlay">
+  <h2>About Kitwe Branch</h2>
+  <p>
+    Led by Pastor Joel Luwawa, the Kitwe branch meets at the School of Natural Resources, Copperbelt University. It’s a vibrant and growing community of believers committed to building a strong culture of faith and transformation every Sunday at 8 AM.
+  </p>
+  <button onclick="closeOverlay('kitwe')">Close</button>
+</div>
+
+<!-- Kabwe -->
+<div class="branch-section" id="kabwe">
+  <img src="pic/Kabwe.jpg" alt="Kabwe Branch" />
+  <div class="branch-info">
+    <h3>KABWE</h3>
+    <p>Mulungushi Town Hall<br>Sundays @ 8 AM</p>
+    <button onclick="openOverlay('kabwe')">Find Out More</button>
+  </div>
+</div>
+
+<div id="kabwe-overlay" class="branch-overlay">
+  <h2>About Kabwe Branch</h2>
+  <p>
+    Pastor Kanyanta leads the Kabwe branch at Mulungushi Town Hall. The branch hosts weekly Sunday services at 8 AM where lives are impacted through the Word, prayer, and community fellowship.
+  </p>
+  <button onclick="closeOverlay('kabwe')">Close</button>
+</div>
+
+<!-- Livingstone -->
+<div class="branch-section" id="livingstone">
+  <img src="pic/Lstone.jpg" alt="Livingstone Branch" />
+  <div class="branch-info">
+    <h3>LIVINGSTONE</h3>
+    <p>Livingstone Primary School<br>Sundays @ 10:30 AM</p>
+    <button onclick="openOverlay('livingstone')">Find Out More</button>
+  </div>
+</div>
+
+<div id="livingstone-overlay" class="branch-overlay">
+  <h2>About Livingstone Branch</h2>
+  <p>
+    The Livingstone branch, led by Pastor Komaki, gathers every Sunday at 10:30 AM at Livingstone Primary School. It’s a joyful, spirit-filled environment where people encounter God and grow together in love and purpose.
+  </p>
+  <button onclick="closeOverlay('livingstone')">Close</button>
+</div>
+
+    
+
+  <!-- Events Section -->
+  <section class="events-section">
+    <h2>UPCOMING EVENTS</h2>
+    <p>Mark your calendar and invite someone special!</p>
+
+    <div class="event-row">
+      <div class="event-image">
+        <img src="pic/LOve sun.png" alt="Love Sunday 2025" />
+      </div>
+      <div class="event-info">
+        <h3>LOVE SUNDAY 2025</h3>
+        <p><strong>Date:</strong> 24th May, 2025</p>
+        <p><strong>Time:</strong> 08:00 AM</p>
+        <p><strong>Venue:</strong> Mulungushi International Conference Centre</p>
+        <p class="event-desc">An unforgettable time of worship, love, and purpose. Don’t miss it!</p>
+
+        <!-- Countdown Timer -->
+        <div id="countdown" class="countdown-timer">
+          <p>Time remaining:</p>
+          <div id="timer">
+            <span id="days"></span> days
+            <span id="hours"></span> hours
+            <span id="minutes"></span> minutes
+            <span id="seconds"></span> seconds
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="site-footer">
+        <div class="footer-top">
+          <div class="footer-section about">
+            <h3>About HOF</h3>
+            <p>We're a family of believers passionate about the gospel of Christ. Join us and grow in faith, purpose, and love.</p>
+          </div>
+      
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="Sermons.html">Sermons</a></li>
+              <li><a href="branches.html">Branches</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <form>
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+      
+          <div class="footer-section contact">
+            <h3>Contact</h3>
+            <p>Email: thomasmtongahof@gmail.com</p>
+            <p>Phone: +260-972-914-226</p>
+            <p>Address: Indeco House, Cairo Road</p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="#"><img src="pic/facebook.jpg" alt="Facebook"></a>
+            <a href="#"><img src="pic/instagram.jpg" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@thehouseholdoffaith?is_from_webapp=1&sender_device=pc"><img src="pic/tiktok.jpg" alt="TikTok"></a>
+            <a href="thomasmtongahof@gmail.com"><img src="pic/youtube.jpg" alt="youtube"></a>
+          </div>
+          <p>&copy; 2025 The Household Of Faith Church. All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+
+</html>
